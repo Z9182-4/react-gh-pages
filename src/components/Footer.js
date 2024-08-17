@@ -23,7 +23,7 @@ function Footer() {
   return (
     <>
       <footer className="footer-container">
-        <p>© 2024 LLLC</p>
+        <p>© 2024 Langara Language Learning Association</p>
       </footer>
       {showTopBtn && (
         <button className="back-to-top-btn" onClick={goToTop}>

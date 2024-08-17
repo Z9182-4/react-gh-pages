@@ -13,9 +13,9 @@ const Header = () => {
   const getHeaderContent = () => {
     switch (location.pathname) {
       case '/':
-        return { title: 'Home', description: 'Welcome to LLLC' };
+        return { title: 'Home', description: 'Welcome to LLLA' };
       case '/about':
-        return { title: 'About', description: 'Learn More About LLLC' };
+        return { title: 'About', description: 'Learn More About LLLA' };
       case '/events':
         return { title: 'Events', description: 'Explore Our Events' };
       case '/contact':

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ExecutiveInfoModal from './ExecutiveInfoModal';
-import SocialLinks from './SocialLinks';
 import '../css/AboutPage.css';
 import '../css/Executives.css';
 
@@ -27,7 +26,7 @@ const AboutPage = () => {
       <div className="about-content">
         <h2>About Us</h2>
         <p>
-          Langara Language Learning Club is committed to helping members learn and master multiple languages. 
+          Langara Language Learning Association is committed to helping members learn and master multiple languages. 
         </p>
         <p>
           Our goal is to create a dynamic and supportive learning environment to help everyone achieve their language learning goals.
