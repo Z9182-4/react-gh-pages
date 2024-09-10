@@ -1,7 +1,7 @@
 .footer-container {
     text-align: center;
     padding: 20px;
-    background-color: #c7def894;
+    background-color: rgba(142, 108, 73, 0.224);
 }
 
 .back-to-top-btn {
@@ -21,5 +21,4 @@
 
 .back-to-top-btn:hover {
     opacity: 1;
-    /* Full opacity on hover */
 }

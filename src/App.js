@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import EventsPage from './components/EventsPage';
 import ContactPage from './components/ContactPage';
+import ClubsDay from './components/Events/2024ClubsDay';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/events" element={<EventsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/events/event1" element={<ClubsDay />} />
           </Routes>
         </main>
         <Footer />  

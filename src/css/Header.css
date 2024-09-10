@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #c7def894;
+    background-color: rgba(173, 154, 135, 0.125);
 }
 
 .logo-container {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 1rem;
+    left: 1rem;
     z-index: 1000;
 }
 
@@ -19,8 +19,8 @@
     margin-top: 1.5rem;
 }
 .logo img {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
 }
 
 nav {
@@ -34,7 +34,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     margin-top: 2rem;
 }
 
@@ -46,10 +46,38 @@ nav ul {
 }
 
 .link-active {
-    color: purple;
+    color: rgb(255, 140, 0);
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin: 0;
+}
+.cta-container {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+.cta-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(255, 140, 0);
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FF8C00;
+    color: white;
+}
+.header-title.langara {
+    background: linear-gradient(to right, grey, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }

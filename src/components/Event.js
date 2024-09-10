@@ -1,13 +1,18 @@
-// src/components/Event.js
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../css/Events.css'; 
 
-function Event({ number, title, description, imgSrc }) {
+function Event({ title, description, imgSrc, linkUrl }) {
   return (
-    <div className="event">
-      <h2>{number}</h2>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <img src={imgSrc} alt={title} />
+    <div className="event"> 
+      <div className="event-text">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <Link to={linkUrl} className="learn-more">Learn More</Link>
+      </div>
+      <div className="event-image-container">
+        <img src={imgSrc} alt={title} className="event-image" />
+      </div>
     </div>
   );
 }

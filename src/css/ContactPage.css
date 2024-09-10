@@ -1,12 +1,11 @@
 .contact-page-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40% 55%;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 55%;
     margin: auto;
     padding: 2rem;
-    height: 75vh;
+    min-height: 75vh;
 }
 
 .social-links-container {
@@ -17,23 +16,12 @@
     height: 100%;
 }
 .social-links-container div{
-    margin: 20px 0;
-}
-.contact-details {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    line-height: 1.5;
-}
-
-.contact-text {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    line-height: 1.5;
+    margin: 20px 2rem;
 }
 
 .contact-form-container {
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-column: -1 / -2;
+    grid-row: -1 / 4;
     display: block;
     justify-content: space-between;
     padding-top: 1rem;

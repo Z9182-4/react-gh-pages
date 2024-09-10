@@ -1,20 +1,53 @@
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.executives {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
 }
 
-.modal {
-    background: white;
+.executive-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+.executive-photo {
     width: 100%;
-    border-radius: 4px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.executive-info {
     text-align: center;
+    padding: 10px 0;
+}
+
+.executive-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.executive-button:hover {
+    background-color: #b3d3ea;
 }

@@ -1,28 +1,24 @@
 import React from 'react';
+import '../css/Executives.css';
 
-const executives = [
-  { name: 'DEMO1', title: 'President' },
-  { name: 'DEMO2', title: 'Vice President' },
-  { name: 'DEMO3', title: 'Treasurer' },
-  { name: 'DEMO4', title: 'Secretary' },
-];
-
-const Executives = ({ onExecutiveClick }) => {
+const Executives = ({ executives, onExecutiveClick }) => {
   return (
-    <div>
-      <h2>Executives</h2>
-      <ul>
-        {executives.map((executive, index) => (
-          <li key={index}>
-            <button 
+    <div className="executives">
+      {executives.map((executive, index) => (
+        <div key={index} className="executive-item">
+          <img src={executive.image} alt={executive.name} className="executive-photo" />
+          <div className="executive-info">
+            <button
+              className="executive-button"
               onClick={() => onExecutiveClick(executive)}
-              className="executive-link"
             >
-              <strong>{executive.name}</strong>
-            </button> - {executive.title}
-          </li>
-        ))}
-      </ul>
+              <span className="executive-name">{executive.name}</span>
+              <br/> 
+              <span className="executive-position">{executive.position}</span>
+            </button>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

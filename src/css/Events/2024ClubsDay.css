@@ -1,0 +1,69 @@
+.clubs-day-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clubs-day-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.clubs-day-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.clubs-day-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.clubs-day-time {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.clubs-day-spacing {
+    margin: 10px 0;
+}
+
+.clubs-day-time p {
+    margin: 5px 0;
+}
+
+.clubs-day-description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.clubs-day-description p {
+    margin: 0;
+}
+
+.clubs-day-link {
+    margin-top: 20px;
+}
+
+.clubs-day-link a {
+    color: rgb(255, 140, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clubs-day-link a:hover {
+    text-decoration: underline;
+}

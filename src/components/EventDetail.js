@@ -1,21 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Events.css'; 
+import { useParams } from 'react-router-dom';
+import { eventsData } from './EventsPage';  
 
-function EventDetail({ title, description, imageUrl }) {
+function EventDetail() {
+  const { eventId } = useParams(); 
+  const event = eventsData.find(e => e.title.toLowerCase().replace(/\s+/g, '-') === eventId);  // 根据 URL 解析事件数据
+
+  if (!event) return <p>Event not found</p>;
+
   return (
     <div className="event-detail">
-        <div className="event-detail-content">
-            <h2>{title}</h2>
-            <p className="event-description">{description}</p>
-            <Link to={`/events/${title.toLowerCase().replace(/\s+/g, '-')}`} className="view-more-link">View More</Link>
-        </div>
-        <div className="event-detail-image">
-            <img src={require(`../images/${imageUrl}`)} alt={title} /> 
-        </div>
+      <h2>{event.title}</h2>
+      <p>{event.description}</p>
+      <img src={require(`../images/${event.imageUrl}`)} alt={event.title} />
     </div>
   );
 }
-
 
 export default EventDetail;
