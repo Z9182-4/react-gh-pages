@@ -4,8 +4,7 @@ import { eventsData } from './EventsPage';
 
 function EventDetail() {
   const { eventId } = useParams(); 
-  const event = eventsData.find(e => e.title.toLowerCase().replace(/\s+/g, '-') === eventId);  // 根据 URL 解析事件数据
-
+  const event = eventsData.find(e => e.title.toLowerCase().replace(/\s+/g, '-') === eventId);  
   if (!event) return <p>Event not found</p>;
 
   return (
