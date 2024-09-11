@@ -1,6 +1,7 @@
 import React from 'react';
 import Event from './Event'; 
 import '../css/Events.css';
+
 export const eventsData = [
   {
     title: "CLUBS DAY 2024 FALL",
@@ -10,29 +11,37 @@ export const eventsData = [
   },
   {
     title: "Event 2",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    imageUrl: "sample2.jpg",
+    description: "TBA",
+    imageUrl: "sample2.png",
     linkUrl: "/events/event2"
   },
   {
     title: "Event 3",
-    description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
-    imageUrl: "sample3.jpg",
+    description: "TBA",
+    imageUrl: "sample3.png",
     linkUrl: "/events/event3"
   },
   {
     title: "Event 4",
-    description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
-    imageUrl: "sample4.jpg",
+    description: "TBA",
+    imageUrl: "sample4.png",
     linkUrl: "/events/event4"
   }
 ];
 
-
 function EventsPage() {
   return (
     <div className="events-page-container">
-      {eventsData.map((event) => (
+      <h2 className="section-title">Ongoing Event</h2>
+      <Event 
+        title={eventsData[0].title} 
+        description={eventsData[0].description} 
+        imgSrc={require(`../images/${eventsData[0].imageUrl}`)} 
+        linkUrl={eventsData[0].linkUrl}  
+      />
+
+      <h2 className="section-title">Future Events</h2>
+      {eventsData.slice(1).map((event) => (
         <Event 
           key={event.title} 
           title={event.title} 
@@ -41,26 +50,27 @@ function EventsPage() {
           linkUrl={event.linkUrl}  
         />
       ))}
+
       <div className="past-events-container">
         <div className="past-events-title">Past Events</div>
         <div className="past-events-grid">
           <div className="past-event-card">
-            <div>Past Event 1</div>
+            <div>Event 1</div>
             <p>Description for Past Event 1</p>
             <a href="#">View More</a>
           </div>
           <div className="past-event-card">
-            <div>Past Event 2</div>
+            <div>Event 2</div>
             <p>Description for Past Event 2</p>
             <a href="#">View More</a>
           </div>
           <div className="past-event-card">
-            <div>Past Event 3</div>
+            <div>Event 3</div>
             <p>Description for Past Event 3</p>
             <a href="#">View More</a>
           </div>
           <div className="past-event-card">
-            <div>Past Event 4</div>
+            <div>Event 4</div>
             <p>Description for Past Event 4</p>
             <a href="#">View More</a>
           </div>

@@ -31,9 +31,9 @@
 }
 
 .home-page-header {
+    padding-top: 25rem;
     text-align: center;
-    padding: 50px 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 3rem;
     position: relative;

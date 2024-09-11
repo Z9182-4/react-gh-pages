@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 const socialLinks = [
-  { name: 'Facebook', icon: faFacebookF, url: 'https://facebook.com/FacebookUser' },
-  { name: 'Twitter', icon: faTwitter, url: 'https://twitter.com/TwitterUser' },
+  { name: 'Discord', icon: faDiscord, url: 'https://discord.com/invite/DiscordUser' },
   { name: 'Instagram', icon: faInstagram, url: 'https://instagram.com/InstagramUser' },
+  { name: 'Twitter', icon: faTwitter, url: 'https://twitter.com/TwitterUser' },
   { name: 'LinkedIn', icon: faLinkedinIn, url: 'https://linkedin.com/in/LinkedInUser' },
   { name: 'Email', icon: faEnvelope, url: 'mailto:contact@example.com' }
 ];
